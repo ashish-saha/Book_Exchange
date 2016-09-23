@@ -1,1 +1,6 @@
-# Book_Exchange
+# Book Exchange
+Raul Alvarez, Debashish Saha, Christian Colon
+
+This app would bring book readers closer to each other. Recent trends show that people still prefer to hold onto physical copies but as people buy more books, there would be a burden on storing them. Instead of shipping the books to some website and going through a long process of approval to sell/donate the books, people can use Book Exchange to connect with other book readers either through the internet or in person and exchange, donate, sell, or talk about their favorite books. The book readers can post pictures of their books to get an immediate appraisal from other users. Book Exchange can also be a platform for groups to participate or host events for special causes (examples could be a college textbook exchange, a party for a new book release, a donation drive for a nonprofit, etc) while keeping up-to-date information of local book related events. Other features can be implemented such as blog posts, forums, 
+
+We haven’t seen a website or app try to connect other book readers closely to what Book Exchange can is trying to offer. It has been done in small ways on social media groups but this is giving book readers their own platform. This will be primary be used in cities since there’s a dense population but it can be used anywhere. 

@@ -16,10 +16,18 @@ router.use(bodyParser.urlencoded({ extended: false }));
 
 // Home route
 router.get('/', function(req, res){
+
+	// This is how easy it is to create data
 	var data = model.user({
 		name: "Raul"
 	});
 
+	// This is how easy it is to save data.
+	data.save();
+
+	// Render the home.handlebards file while passing in an object.
+	// Only one object can be thrown to the frontend  but we can throw in many instances.
+	// Whatever instance that's being thrown in, for example in this case, name, where ever {{name}} appears in the home.handlebars file, the passed in value from here, data.name will appear there.
 	res.render('home', {name: data.name});
 });
 

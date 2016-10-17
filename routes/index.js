@@ -28,11 +28,21 @@ router.get('/', function(req, res){
 	// Render the home.handlebards file while passing in an object.
 	// Only one object can be thrown to the frontend  but we can throw in many instances.
 	// Whatever instance that's being thrown in, for example in this case, name, where ever {{name}} appears in the home.handlebars file, the passed in value from here, data.name will appear there.
-	res.render('home', {name: data.name});
+	res.render('home', {name: data.name, password: "Whatever"});
+});
+
+router.get('/about', function(req, res){
+	res.render('about');
+});
+
+router.get('/register', function(req, res){
+	res.render('register');
 });
 
 //===================POST ROUTES===================//
-
+router.post('/register', function(req,res){
+	res.render('register_complete');
+});
 
 
 // Have directory recognized by outside code

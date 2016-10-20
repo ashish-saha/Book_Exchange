@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Relative to mongoose and MongoDB
 var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
-mongoose.connect('mongodb://localhost/Book_Exchange', function(err,res){
+mongoose.connect('mongodb://localhost/Book_Exchange', function(err, res){
 	if(!err){
 		console.log("Connected to database!");
 	}

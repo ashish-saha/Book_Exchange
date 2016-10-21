@@ -1,0 +1,63 @@
+CREATE TABLE Users (
+  UserID int,
+  Lname varchar (10),
+  Fname varchar (10),
+  Email varchar2(40) not null,
+  Address varchar2(20),
+  State char(2),
+  Zipcode char(5),
+  PRIMARY KEY (UserID)
+);
+
+
+Insert into Users values (1, 'Saha','Debashish', 'debashish.deep74@qmail.cuny.edu', 'Jamaica', 'NY', '11432')
+Insert into Users values (2, 'Colon','Christian', 'colon@yahoo.com', 'flushing', 'NY', '11357')
+Insert into Users values (3, 'Raul','Alvarez', 'saul@gmail.com', 'Forest hills', 'NY', '11430')
+Insert into Users values (4, 'Rodgers','Micheal', 'mike@gmail.com', 'Kew Gargdens', 'NY', '11463')
+Insert into Users values (5, 'Madison', 'James', 'james@hotmail.com', 'Belle Grove', 'VA', '11243')
+
+CREATE TABLE General_Users (
+  GeneralID int,
+  UserID int,
+  Primary Key (GeneralID),
+  Foreign Key (UserID) references Users(UserID)
+)
+
+Insert into General_Users values (1, 4)
+
+
+CREATE TABLE Organizations (
+  OrgID int,
+  UserID int,
+  OrgName varchar (20),
+  Primary Key (OrgID),
+  Foreign Key (UserID) references Users(UserID)
+)
+
+Insert into Organizations values (1, 5, 'James Book Club')
+
+CREATE TABLE Administrators (
+  AID int,
+  UserID int,
+  Primary Key (AID),
+  Foreign Key (UserID) references Users(UserID)
+)
+
+Insert into Administrators values (1, 1)
+Insert into Administrators values (3, 3)
+Insert into Administrators values (2, 2)
+
+Create Table Books (
+  BookID int,
+  UserID int,
+  Title varchar (20),
+  Author varchar (20),
+  Address varchar2(20),
+  State char(2),
+  Zipcode char(5),
+  ISBN varchar (10),
+  PRIMARY KEY (BookID),
+  Foreign Key (UserID) references Users (UserID) 
+)
+
+Insert into Books values (1, 5, 'Harry potter', 'J K Rowling', 'Belle Grove', 'VA', '11243', '3333333')

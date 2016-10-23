@@ -9,7 +9,7 @@ var handlebars = require('express-handlebars');
 var app = express();
 
 // Public directory for scripts, css, images, etc
-app.use('/static', express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 // Have app use the routes folder by default
 app.use('/', routes);

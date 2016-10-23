@@ -23,7 +23,7 @@ $(function() {
   $('.progress-bar').css("width", progress + "%");
   $('.form-control').keyup(function() {
     $('.nxt').removeClass("hide fadeOutDown").addClass("fadeInUp");
-  })
+  });
 
   $('.nxt').click(function() {
     $('.nxt').removeClass("fadeInUp").addClass('fadeOutDown');

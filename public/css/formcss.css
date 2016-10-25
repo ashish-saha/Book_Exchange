@@ -178,6 +178,24 @@ label {
   box-shadow: none;
   border-color: #ccc;
 }
+.btn-usertype {
+  background-color: #E8E9EC;
+  outline: none;
+  color: #2D3B55;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 14px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.btn-usertype:focus {
+  color: #fff;
+  background-color: #2D3B55;
+}
 .btn-login {
   background-color: #E8E9EC;
   outline: none;

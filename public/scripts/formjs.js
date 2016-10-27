@@ -14,17 +14,17 @@ $(function() {
 		e.preventDefault();
 	});
 });
-function hideA()
+function hideorg()
 {
 
-    document.getElementById("A").style.visibility="hidden";
-    document.getElementById("B").style.visibility="visible";
+    document.getElementById("org").style.visibility="hidden";
+    document.getElementById("SU").style.visibility="visible";
 
 }
 
-function hideB()
+function hideSU()
 {
-    document.getElementById("B").style.visibility="hidden";
-    document.getElementById("A").style.visibility="visible";
+    //document.getElementById("SU").style.visibility="hidden";
+    document.getElementById("org").style.visibility="visible";
 
 }

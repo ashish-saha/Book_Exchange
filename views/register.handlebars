@@ -46,22 +46,36 @@
                   </li>
                 </ul> -->
                 <div class="btn-group btn-group-lg" role ="group">
-                  <input type="radio" class="btn-usertype" value="Single User" name="radio"> Single User
-                  <input type="radio" class="btn-usertype" value="Organization" name="radio"> Organization
+                  <input type="radio" class="btn-usertype" value="Single User" name="radio" onchange="hideorg(this)" checked="checked"> Single User
+                  <input type="radio" class="btn-usertype" value="Organization" name="radio" onchange="hideSU(this)"> Organization
                   <input type="radio" class="btn-usertype" value="Shop" name="radio"> Shop
                 </div>
-                <div class="form-group">
-                  <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                <div id = "SU" >
+                  <div id = "org" style="visibility:hidden">
+                  <div class="form-group"  >
+                    <input type="text" name="organization" id="organization" tabindex="1" class="form-control" placeholder="Organization Name" value="">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                  <div class="form-group" >
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group" >
+                    <input type="text" name="firstname" id="firstname" tabindex="1" class="form-control" placeholder="First Name" value="">
+                  </div>
+                  <div class="form-group" >
+                    <input type="text" name="lastname" id="lastname" tabindex="1" class="form-control" placeholder="Last Name" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                </div>
-                <div class="form-group">
-                  <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                </div>
+
                 <div class="form-group">
                   <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
@@ -88,10 +102,3 @@
   </div>
 </div>
 <!-- whole first container -->
-<footer>
-    <div class="container">
-        <div class="col-md-10 col-md-offset-1 text-center">
-            <h6 style="font-size:14px;font-weight:100;color: #fff;">Coded with <i class="fa fa-heart red" style="color: #BC0213;"></i> by <a href="http://hashif.com" style="color: #fff;" target="_blank">Hashif</a></h6>
-        </div>
-    </div>
-</footer>

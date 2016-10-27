@@ -67,7 +67,10 @@ h5 {
 #contact {
   background: grey;
   color: white;
+}
 
+#about_introduction {
+  font-size: 1.9em;
 }
 
 

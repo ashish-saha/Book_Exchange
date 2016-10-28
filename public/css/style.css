@@ -1,5 +1,84 @@
-.pa{
-	font-family: Georgia;
-	font-size: 400px;
-	color: skyblue;
+body {
+  font-family: 'Cormorant Garamond', serif;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
 }
+
+.jumbotron-fluid {
+/*  background:  url('../img/book.jpg');
+*/  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('../img/book.jpg');
+
+  background-size: cover;
+  min-height:570px;
+  background-position: right;
+
+
+}
+
+.container{
+  margin-top: 6%;
+}
+
+body .jumbotron-fluid  {
+  padding-top: 22%;
+}
+
+#about-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('../img/ocean2.jpg');
+  background-size: cover;
+  color: white;
+
+}
+
+body nav {
+  opacity: 0.9;
+}
+
+.display-4 {
+ /*outline: 1px solid black;*/
+  border: solid 3px black;
+  background: white;
+  display: inline;
+  padding: 5px 1%;
+}
+
+h5 {
+  padding-top:2%;
+  font-weight: normal;
+}
+
+.img {
+  margin: 0 auto;
+}
+
+.nav-inline {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+
+#books, #how  {
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+#bottom {
+  font-size: 25px;
+}
+
+#contact {
+  background: grey;
+  color: white;
+  overflow: hidden;
+}
+
+#about_introduction {
+  font-size: 1.9em;
+}
+
+
+
+
+

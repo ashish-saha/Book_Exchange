@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
 
-body {
+/*body {
   padding-top: 90px;
   background:#F7F7F7;
   color:#666666;
@@ -11,8 +11,8 @@ body {
 body{
   width: 100%;
   -webkit-animation: HeroBG 20s ease infinite;
-          animation: HeroBG 20s ease infinite;
-}
+    /*//*      animation: HeroBG 20s ease infinite;*/
+/*}*/
 
 @-webkit-keyframes HeroBG {
   0% {

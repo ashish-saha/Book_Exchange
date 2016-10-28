@@ -1,7 +1,7 @@
 // Setting up middleware.
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema,
-	ObjectId = Schema.ObjectId;
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
 
 // db is the entire database.
 var db = {};
@@ -11,6 +11,11 @@ db.user_schema = new Schema({
 	id: ObjectId,
 	email: {type: String, lowercase: true, unique: true},
 	created_date: {type: Date, default: Date.now()},
+
+	// Password for user
+	password: Object,
+	iv: Buffer,
+
 	// Use for recovering password, maybe have other uses
 	random_URL: {type: ObjectId, default: mongoose.Types.ObjectId()},
 
@@ -58,14 +63,22 @@ db.organization_schema = new Schema({
 	organization_name: String
 });
 
+db.notifications_schema = new Schema({
+	id: ObjectId,
+	title: String,
+	type: String,
+	description: String
+});
 
 
-// Instatiate proper schema for creating data.
+
+// Instantiate proper schema for creating data.
 db.user = mongoose.model('user', db.user_schema);
 db.profile = mongoose.model('profile', db.profile_schema);
 db.reader = mongoose.model('reader', db.reader_schema);
 db.bookstore = mongoose.model('bookstore', db.bookstore_schema);
 db.organizaton = mongoose.model('organization', db.organization_schema);
+db.notifications = mongoose.model('notifications', db.notifications_schema);
 
 // Export db to be recognized.
 module.exports = db;

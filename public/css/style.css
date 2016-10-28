@@ -71,14 +71,11 @@ h5 {
 #contact {
   background: grey;
   color: white;
-  overflow: hidden;
+  position:relative;
+  bottom:0;
 }
 
 #about_introduction {
   font-size: 1.9em;
 }
-
-
-
-
 

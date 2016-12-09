@@ -79,3 +79,29 @@ h5 {
   font-size: 1.9em;
 }
 
+
+
+
+#user-row {
+  background-image: url('../img/background1.jpg');
+  background-repeat: no-repeat;
+  background-position: -1134px -750px;
+}
+
+#harry1 {
+  margin-top: 20%;
+}
+
+#user {
+  padding-top: 10%;
+}
+
+.fixed {
+    position: fixed;
+    width: 25%;
+}
+.scroll {
+    float: left;
+    margin-left: 25%;
+}
+

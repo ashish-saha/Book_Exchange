@@ -47,6 +47,13 @@ router.get('/reader_dashboard', function(req, res){
 	res.render('reader_dashboard');
 });
 
+router.get('/organization_dashboard', function(req, res){
+	res.render('organization_dashboard');
+});
+
+router.get('/search', function(req, res){
+	res.render('search');
+});
 
 
 router.get('/register', function(req, res){

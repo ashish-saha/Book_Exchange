@@ -99,7 +99,7 @@ h5 {
 }
 
 #user {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .fixed {
@@ -114,3 +114,17 @@ h5 {
 .login {
   padding-bottom: 15%;
 }
+
+
+
+
+
+
+.map {
+  float:right;
+  max-width:1130px;
+  max-height:740px;
+  position:fixed;
+  left:57%;
+}
+

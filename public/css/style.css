@@ -81,6 +81,12 @@ h5 {
 
 
 
+.center {
+  margin: 10% auto 0 auto;
+  float: none;
+}
+
+
 
 #user-row {
   background-image: url('../img/background1.jpg');
@@ -105,3 +111,6 @@ h5 {
     margin-left: 25%;
 }
 
+.login {
+  padding-bottom: 15%;
+}

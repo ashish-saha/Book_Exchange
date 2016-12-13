@@ -43,6 +43,12 @@ router.get('/login', function(req, res){
 	res.render('login');
 });
 
+router.get('/reader_dashboard', function(req, res){
+	res.render('reader_dashboard');
+});
+
+
+
 router.get('/register', function(req, res){
 	res.render('register');
 });
